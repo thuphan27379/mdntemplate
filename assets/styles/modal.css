@@ -1,0 +1,46 @@
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
+.modal-overlay {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.modal-content {
+  flex-basis: 32.5rem;
+  outline: none;
+  padding: 1.5rem;
+}
+.modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.modal-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+@media screen {
+  body.ReactModal__Body--open {
+    overflow: unset;
+  }
+  .modal-overlay {
+    align-items: center;
+    background-color: rgb(240, 240, 244, 0.66);
+  }
+  .modal-content {
+    box-shadow: 0 2px 14px rgb(58, 57, 68, 0.2);
+    height: fit-content;
+    max-height: 90vh;
+    max-width: 40rem;
+    overflow: auto;
+    width: 90vw;
+  }
+}
